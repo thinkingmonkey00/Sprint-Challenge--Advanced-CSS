@@ -95,8 +95,11 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .btn.btn-signup {
         .sign-up();
+        @media @phone {
+          .sign-up(100%, 2rem)
+        }
       }
     }
       .walk-img {

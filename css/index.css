@@ -306,14 +306,14 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+.home .walk .walk-text .btn.btn-signup {
   text-decoration: none;
   color: #454A59;
   font-size: 1.2rem;
   padding: 0.5rem 2rem;
   transition-property: all;
   transition-duration: 500ms;
-  width: 100%;
+  width: 30%;
   border-radius: 5px;
   text-align: center;
   background: #22283A;
@@ -323,16 +323,46 @@ footer {
   border: 2px solid transparent;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text .btn {
+  .home .walk .walk-text .btn.btn-signup {
     padding: 0;
   }
 }
-.home .walk .walk-text .btn:hover {
+.home .walk .walk-text .btn.btn-signup:hover {
   transition-property: all;
   transition-duration: 500ms;
   background: #F6F7F8;
   color: #F77F00;
   border: 2px solid #F77F00;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn.btn-signup {
+    text-decoration: none;
+    color: #454A59;
+    font-size: 1.2rem;
+    padding: 0.5rem 2rem;
+    transition-property: all;
+    transition-duration: 500ms;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    background: #22283A;
+    padding: 2rem;
+    color: #F6F7F8;
+    font-size: 1.8rem;
+    border: 2px solid transparent;
+  }
+  .home .walk .walk-text .btn.btn-signup:hover {
+    transition-property: all;
+    transition-duration: 500ms;
+    background: #F6F7F8;
+    color: #F77F00;
+    border: 2px solid #F77F00;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .home .walk .walk-text .btn.btn-signup {
+    padding: 0;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
