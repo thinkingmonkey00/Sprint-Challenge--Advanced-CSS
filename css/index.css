@@ -209,18 +209,16 @@ footer {
   align-items: center;
 }
 .home .intro {
-  max-width: 720px;
-  margin: 0 auto;
+  max-width: 800px;
 }
 .home .intro img {
-  max-width: 700px;
   border-radius: 5px;
 }
 .home .intro h2 {
-  padding: 15px;
+  padding: 1rem;
 }
 .home .intro p {
-  padding: 0 15px;
+  padding: 0 1rem;
 }
 .home .space-images {
   display: flex;
@@ -234,13 +232,13 @@ footer {
   height: 100%;
 }
 .home .visit-planets {
-  padding: 15px;
+  padding: 1.5rem;
 }
 .home .visit-planets h3 {
-  margin-top: 11px;
+  margin-top: 1rem;
 }
 .home .visit-planets p {
-  margin-top: 13px;
+  margin-top: 1.2rem;
 }
 .home .walk {
   margin-top: 60px;
