@@ -7,7 +7,7 @@
 
     @media @phone {
       max-width: 500px;
-      
+      margin   : @centered;
     }
 
     img {
@@ -32,7 +32,9 @@
     display  : flex;
     flex-wrap: wrap;
     width    : 100%;
+
     @media @phone {
+
       .sky,
       .launch {
         display: none;
@@ -45,6 +47,7 @@
       margin       : 20px 2.5%;
       border-radius: 20px;
       height       : 100%;
+
       @media @phone {
         width: 100%;
       }
@@ -69,12 +72,16 @@
     padding        : 50px 60px;
     display        : flex;
     justify-content: center;
+
     @media @phone {
       .flex-direction(column);
-      padding: 1rem;
+      padding: 2rem;
+      width  : 100%;
     }
+
     .walk-text {
       width: 50%;
+
       @media @phone {
         width: 100%;
         .flex-order(1);
@@ -91,21 +98,27 @@
       .btn {
         .sign-up();
       }
-
+    }
       .walk-img {
         width      : 46%;
         margin-left: 4%;
+
         @media @phone {
-          width: 100%;
-          margin:0;
+          width : 100%;
+          margin: @centered;
         }
+
         img {
           width        : 100%;
           height       : auto;
           border-radius: 10px;
+
+          @media @phone {
+            width: 100%;
+          }
         }
       }
-    }
+    
   }
 }
 
