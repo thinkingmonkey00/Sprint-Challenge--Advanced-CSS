@@ -3,13 +3,11 @@
 
 // Links
 .links() {
+    font-family: @ubuntu;
     text-decoration: none;
     color          : @nav-font;
     font-size      : 1.2rem;
     padding        : 0.5rem 2rem;
-    @media @phone {
-        padding: 0;
-    }
 }
 
 .hover-action(@transition-property: all, @transition-duration: 500ms) {
@@ -19,17 +17,17 @@
 }
 
 // Sign-up Button
-.sign-up(@width: 30%, @padding: 2rem) {
-    .links();
-    .hover-action();
+.sign-up(@width, @padding) {
     width     : @width;
+    padding   : @padding;
     border-radius: @rounded;
+    text-decoration: none;
     text-align: center;
     background: @btn-bg-color;
-    padding   : @padding;
     color     : @porcelain;
     font-size: 1.8rem;
     border: 2px solid transparent;
+    .hover-action();
     &:hover {
         .hover-action();
         background: @btn-signup-bg;

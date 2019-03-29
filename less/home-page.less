@@ -81,7 +81,6 @@
 
     .walk-text {
       width: 50%;
-
       @media @phone {
         width: 100%;
         .flex-order(1);
@@ -95,10 +94,10 @@
         margin-bottom: 26px;
       }
 
-      .btn.btn-signup {
-        .sign-up();
+      .btn {
+        .sign-up(30%, 1rem);
         @media @phone {
-          .sign-up(100%, 2rem)
+          .sign-up(100%, 2rem);
         }
       }
     }
