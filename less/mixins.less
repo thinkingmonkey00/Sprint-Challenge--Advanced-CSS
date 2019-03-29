@@ -10,12 +10,18 @@
 }
 
 // Sign-up Button
-.sign-up() {
-    width     : 30%;
+.sign-up(@width: 30%, @padding: 1rem) {
+    .links();
+    width     : @width;
     border-radius: @rounded;
     text-align: center;
     background: @btn-bg-color;
-    padding   : 0.5rem;
-    color     : @btn-signup-color;
+    padding   : @padding;
+    color     : @porcelain;
     font-size: 1.8rem;
+    &:hover {
+        background: @btn-signup-bg;
+        color: @btn-cta-color;
+        border: 2px solid @btn-cta-color;
+    }
 }
