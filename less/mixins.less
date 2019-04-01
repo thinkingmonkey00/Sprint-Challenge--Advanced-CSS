@@ -1,1 +1,37 @@
 // Mixins Here
+@import "flex-mixins.less";
+
+// Links
+.links() {
+    font-family: @ubuntu;
+    text-decoration: none;
+    color          : @nav-font;
+    font-size      : 1.2rem;
+    padding        : 0.5rem 2rem;
+}
+
+.hover-action(@transition-property: all, @transition-duration: 500ms) {
+    transition-property: @transition-property;
+    transition-duration: @transition-duration;
+
+}
+
+// Sign-up Button
+.sign-up(@width, @padding) {
+    width     : @width;
+    padding   : @padding;
+    border-radius: @rounded;
+    text-decoration: none;
+    text-align: center;
+    background: @btn-bg-color;
+    color     : @porcelain;
+    font-size: 1.8rem;
+    border: 2px solid transparent;
+    .hover-action();
+    &:hover {
+        .hover-action();
+        background: @btn-signup-bg;
+        color: @btn-cta-color;
+        border: 2px solid @btn-cta-color;
+    }
+}

@@ -1,1 +1,24 @@
 // Navigation code here
+.nav-wrapper {
+    width: 100vw;
+    .flex-display();
+    .justify-content(center);
+    text-align: center;
+    .inner-wrapper {
+        .flex-display();
+        .flex-direction(column);
+        .justify-content(center);
+        padding: 1rem 2rem;
+        @media @phone {
+            max-width: 500px;
+        }
+    }
+}
+.main-nav {
+    .flex-display();
+    .justify-content(space-between);
+    padding-top: 1rem;
+    a {
+        .links();
+    }
+}
