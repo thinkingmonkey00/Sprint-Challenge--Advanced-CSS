@@ -36,6 +36,9 @@ Edit this document to include your answers after each question. Make sure to lea
     Responsive websites respond to the size of the browser at any given point.  Responsive design is smooth design because the layout fluidly adjusts.  Adaptive websites adapt to the width of the browser at specific points.  Adaptive design is a snap design because the page snaps into place once it reaches a specific size.
 
 2. Describe what it means to be mobile first vs desktop first.
+    Mobile first starts out building the website for mobile devices, then as the viewport scales up media queries are used with min-width to create a responsive layout.
+
+    Desktop first starts out building the website for desktop monitors and is set with media queries using max-width to define viewport sizes for other devices.
 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
