@@ -3,7 +3,7 @@ footer {
   color: #22283B;
   background: #f4f4f4;
   padding: 20px 0;
-  border: 1px double #e0e0e0;
+  border: 1px double #e0e0e;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -12,5 +12,18 @@ footer {
 }
   p {
     animation-duration: 5s;
-    animation
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 60%;
+      width: 100%
+    }
+    to {
+      margin-left: 10%;
+      width: 100%;
+    }
   }
