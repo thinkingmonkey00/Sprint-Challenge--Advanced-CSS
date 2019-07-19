@@ -54,6 +54,7 @@
     @media @phone {
       display: flex;
       flex-wrap: wrap-reverse;
+      padding:15px;
     }
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
@@ -81,8 +82,14 @@
       .button-size();
      }
      button:hover{
-       background-color:green;
-       color:navy;
+       background-color:white;
+       color:#22283A;
+     }
+
+     button.btns {
+      @media @phone {
+        width: 100%;
+      }
      }
 
 

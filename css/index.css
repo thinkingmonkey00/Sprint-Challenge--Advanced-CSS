@@ -245,6 +245,7 @@ footer {
   .home .walk {
     display: flex;
     flex-wrap: wrap-reverse;
+    padding: 15px;
   }
 }
 .home .walk .walk-text {
@@ -271,8 +272,13 @@ footer {
   font-size: 2rem;
 }
 .home .walk .walk-text button:hover {
-  background-color: green;
-  color: navy;
+  background-color: white;
+  color: #22283A;
+}
+@media (max-width:500px) {
+  .home .walk .walk-text button.btns {
+    width: 100%;
+  }
 }
 .home .walk .walk-text .walk-img {
   width: 46%;
