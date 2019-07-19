@@ -1,2 +1,28 @@
-// Navigation code here
+nav {
+    background: @nav-bg;
+    width: 100%;
+    margin: 20px auto 0;
+    border-bottom: 1px solid @nav-border;
+    .flexbase(column, space-between, center);
+}
 
+div {
+    padding-bottom: 10px;
+    @media @phone {
+        max-width: 500px;
+    }
+
+    h1 {
+        font-size: 4rem;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: @nav-font;
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding: 0 15px;
+    }
+}
