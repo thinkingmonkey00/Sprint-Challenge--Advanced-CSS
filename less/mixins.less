@@ -1,4 +1,15 @@
 // Mixins Here
+// Navigation Mixin
+        .center() {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+
+
+//Parametic Mixin
 .custom-button(@bg-color, @width:200px, @font:#000){
     display: flex;
     background-color: @bg-color;
@@ -16,6 +27,8 @@
         border: 1px solid @btn-bg-color;
     }
 }
+
+
 // Navigation Mixin
 .center() {
     display: flex;
@@ -24,6 +37,12 @@
     align-items: center;
   }
  
+.background()
+{ width: 100%;
+    padding: 2rem;
+    background: #f4f4f4;}
+
+
 // Sing up button
 .btn{
     .custom-button(@btn-bg-color, @width:200px, @font:white);
