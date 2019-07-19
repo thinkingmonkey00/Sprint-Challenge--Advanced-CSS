@@ -2,18 +2,30 @@
 .header-nav{
     .background();
     .center();
-@phone ( max-width: 500px )
+    @media @phone {
+        background-color: red;
 
-}
+    }
+
     a{
         font-size: 1.4rem;
         margin: 1rem;
         padding: 2rem;
         text-decoration: none;
         color: black;
+        @media @phone {
+            display: flex;
+            flex-direction: row;
+        }
+        
     }
     h1{
         font-size: 4rem;
         margin: 1rem;
+
+        @media @phone {
+            font-size: 2rem;
+            
+        }
     }
 }
