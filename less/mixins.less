@@ -9,9 +9,18 @@
     font-size: 2rem;
     border-radius: 10px;
     color:@font;
+
+    &:hover{
+        background-color:@font;
+        color:@bg-color; 
+        border: 1px solid @btn-bg-color;
+    }
 }
+
 .btn{
     .custom-button(@btn-bg-color, @width:200px, @font:white);
     align-items: center;
     justify-content: center;
+
+
 }
