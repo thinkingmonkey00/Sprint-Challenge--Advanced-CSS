@@ -1,7 +1,11 @@
 // Home Content
 
 .home {
-
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-size:3.5rem;
+  }
   .intro {
 
     h2 {
@@ -78,8 +82,8 @@
       }
 
      button {
-      .button-style();
-      .button-size();
+      .button-style(6px);
+      .button-size(2rem);
      }
      button:hover{
        background-color:white;
@@ -91,24 +95,22 @@
         width: 100%;
       }
      }
-
+    }
 
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+        width: 100%;
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px; 
       }
-    }
+    
   }
 }
-      h1 {
-        display: flex;
-        justify-content: center;
-        font-size:3.5rem;
-      }
 }//home
