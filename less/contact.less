@@ -54,3 +54,50 @@
 
 
 //CHECKING NAV
+.topNavFixed {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(246, 246, 246, 0.9);
+}
+.topNavContainer {
+  display: flex;
+  width: 100%;
+  margin: 2rem auto 0 auto;
+  flex-flow: column nowrap;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+.topNavContainer h1 {
+  color: #5E6164;
+  font-size: 4rem;
+}
+.topNavContainer .topNav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 1.9rem auto 1rem auto;
+}
+@media (max-width: 500px) {
+  .topNavContainer .topNav {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+.topNavContainer .topNav a {
+  font-size: 1.7rem;
+  color: #5E6164;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.topNavContainer .topNav a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .topNavContainer .topNav a {
+    margin: 0;
+  }
+}
